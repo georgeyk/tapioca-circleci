@@ -1,5 +1,7 @@
 # Tapioca CircleCI
 
+[![CircleCI](https://circleci.com/gh/georgeyk/tapioca-circleci/tree/master.svg?style=svg)](https://circleci.com/gh/georgeyk/tapioca-circleci/tree/master)
+
 CircleCI API Wrapper using tapioca https://circleci.com/docs/api/
 
 *under development, very unstable and not published to pypi yet*
