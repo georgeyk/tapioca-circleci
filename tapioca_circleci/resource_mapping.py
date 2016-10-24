@@ -12,8 +12,13 @@ RESOURCE_MAPPING = {
     },
     'project': {
         'resource': 'project/{vcs_type}/{username}/{project}',
-        'docs': '',
-        'methods': ['GET'],
+        'docs': 'https://circleci.com/docs/api/#recent-builds-project',
+        'methods': ['GET', 'POST'],
+    },
+    'follow_project': {
+        'resource': 'project/{vcs_type}/{username}/{project}/follow',
+        'docs': 'https://circleci.com/docs/api/#follow-project',
+        'methods': ['POST'],
     },
     'project_build': {
         'resource': 'project/{vcs_type}/{username}/{project}/{build_num}',
@@ -25,10 +30,15 @@ RESOURCE_MAPPING = {
         'docs': 'https://circleci.com/docs/api/#retry-build',
         'methods': ['POST'],
     },
+    'cancel_project_build': {
+        'resource': 'project/{vcs_type}/{username}/{project}/{build_num}/cancel',
+        'docs': 'https://circleci.com/docs/api/#cancel-build',
+        'methods': ['POST'],
+    },
     'project_builds_for_branch': {
         'resource': 'project/{vcs_type}/{username}/{project}/tree/{branch}',
         'docs': 'https://circleci.com/docs/api/#recent-builds-project-branch',
-        'methods': ['GET'],
+        'methods': ['GET', 'POST'],
     },
     'build_artifacts': {
         'resource': 'project/{vcs_type}/{username}/{project}/{build_num}/artifacts',
@@ -44,5 +54,10 @@ RESOURCE_MAPPING = {
         'resource': 'recent-builds',
         'docs': 'https://circleci.com/docs/api/#recent-builds',
         'methods': ['GET'],
+    },
+    'clear_cache': {
+        'resource': 'project/{vcs_type}/{username}/{project}/build-cache',
+        'docs': 'https://circleci.com/docs/api/#clear-cache',
+        'methods': ['DELETE'],
     },
 }
