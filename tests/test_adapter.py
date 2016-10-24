@@ -30,12 +30,12 @@ def test_get_request_kwargs_timeout(adapter):
 
 
 def test_fill_resource_template_url(adapter):
-    template = '{user_id}-{vcs_type}'
+    template = '{branch}-{vcs_type}'
     result = adapter.fill_resource_template_url(template, {})
-    assert result == 'me-github'
+    assert result == 'master-github'
 
-    result = adapter.fill_resource_template_url(template, {'user_id': 'other'})
+    result = adapter.fill_resource_template_url(template, {'branch': 'other'})
     assert result == 'other-github'
 
     result = adapter.fill_resource_template_url(template, {'vcs_type': 'gitlab'})
-    assert result == 'me-gitlab'
+    assert result == 'master-gitlab'

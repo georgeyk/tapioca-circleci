@@ -8,8 +8,7 @@ from .resource_mapping import RESOURCE_MAPPING
 class CircleCIClientAdapter(JSONAdapterMixin, TapiocaAdapter):
     api_root = 'https://circleci.com/api/v1.1/'
     resource_mapping = RESOURCE_MAPPING
-    _default_resource_kwargs = {'user_id': 'me',
-                                'vcs_type': 'github'}
+    _default_resource_kwargs = {'vcs_type': 'github', 'branch': 'master'}
 
     def get_request_kwargs(self, api_params, *args, **kwargs):
         params = super().get_request_kwargs(api_params, *args, **kwargs)
