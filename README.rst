@@ -13,12 +13,11 @@ CircleCI API Wrapper using tapioca https://circleci.com/docs/api/
 Installation
 ------------
 
+**IMPORTANT**: Only Python 3.5+
+
 .. code-block:: bash
 
     pip install tapioca-circleci
-
-
-**NOTE**: Only tested with Python 3.5+
 
 
 Documentation
