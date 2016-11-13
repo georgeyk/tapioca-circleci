@@ -33,7 +33,7 @@ Documentation
     )
 
 
-To generate API tokens, access your dashboard: [https://circleci.com/account/api](https://circleci.com/account/api)
+To generate API tokens, access your dashboard: https://circleci.com/account/api/
 
 
 Serialization
@@ -53,10 +53,12 @@ Deseralization
 More
 ----
 
-* Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/stable/quickstart.html)
+* Learn how Tapioca works here_
 * Explore this package using iPython
 * Have fun!
 
 
 .. |CircleCI Status| image:: https://circleci.com/gh/georgeyk/tapioca-circleci/tree/master.svg?style=svg
    :target: https://circleci.com/gh/georgeyk/tapioca-circleci/tree/master
+
+.. _here: http://tapioca-wrapper.readthedocs.org/en/stable/quickstart.html
